@@ -1,0 +1,106 @@
+#include "Chemist.h"
+/**********
+* File: Chemist.cpp
+* Intended for Project 2: Laborotory
+**********/
+
+//Default Constructor
+Chemist::Chemist() {
+  m_myName = "Beaker";
+  m_numSubstances = 0;
+}
+
+//Overloaded Constructor
+Chemist::Chemist(string name) {
+  m_myName = name;
+  m_numSubstances = 0;
+}
+
+string Chemist::GetName() {
+    return m_myName;
+}
+
+void Chemist::SetName(string name) {
+    m_myName = name;
+}
+
+int Chemist::CheckSubstance(Substance sub) {
+    for (int i = 0; i < PROJ2_SIZE; i++){
+        if (m_mySubstances[i].m_name == sub.m_name){
+            if (m_mySubstances[i].m_quantity >= 1){
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+
+void Chemist::AddSubstance(Substance sub) {
+    bool exists = false;
+    for(int i = 0; i < m_numSubstances; i++){
+        if (m_mySubstances[i].m_name == sub.m_name){
+            exists = true;
+        }
+    }
+     if(not exists){
+        m_mySubstances[m_numSubstances] = sub;
+        m_mySubstances[m_numSubstances].m_quantity = 0;
+	m_numSubstances++;
+        }
+}
+
+void Chemist::IncrementQuantity(Substance sub) {
+    for(int i = 0; i < m_numSubstances; i++){
+        if (m_mySubstances[i].m_name == sub.m_name){
+            m_mySubstances[i].m_quantity++;
+        }
+    }
+}
+
+bool Chemist::DecrementQuantity(Substance sub) {
+    for(int i = 0; i < m_numSubstances; i++){
+        if (m_mySubstances[i].m_name == sub.m_name){
+            if (m_mySubstances[i].m_quantity >= 1){
+                m_mySubstances[i].m_quantity--;
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+bool Chemist::CheckQuantity(Substance sub1, Substance sub2) {
+    bool exists1 = false;
+    bool exists2 = false;
+
+    for(int i = 0; i < m_numSubstances; i++){
+        if (m_mySubstances[i].m_name == sub1.m_name){
+            if (m_mySubstances[i].m_quantity > 1){
+                exists1 = true;
+            }
+        }else if (m_mySubstances[i].m_name == sub2.m_name){
+            if (m_mySubstances[i].m_quantity > 1){
+                exists2 = true;
+            }
+        }
+    }
+    if (exists1 && exists2){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+Substance Chemist::GetSubstance(int index){
+    return m_mySubstances[index];
+}
+
+int Chemist::GetTotalSubstances(){
+    int totalSubstances = 0;
+    for(int i = 0; i < m_numSubstances; i++){
+        if (m_mySubstances[i].m_quantity > 0){
+            totalSubstances++;
+        }
+    }
+    return totalSubstances;
+}

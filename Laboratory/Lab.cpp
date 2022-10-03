@@ -1,0 +1,231 @@
+#include "Lab.h"
+#include <string>
+//#include "Chemist.cpp"
+/**********
+* File: Lab.cpp
+* Intended for Project 2: Laborotory
+**********/
+
+//Default constructor
+Lab::Lab(){}
+
+//Loads all substances to chemist array
+void Lab::LoadSubstances(){
+
+    fstream inputStream;
+    inputStream.open(PROJ2_DATA);
+
+    string name, type, formula, sub1, sub2;
+
+    if (inputStream.is_open()) { //Checks to see if the file exists and was opened
+
+      for(int i = 0; i < PROJ2_SIZE; i++){
+        getline(inputStream, name, ',');
+        getline(inputStream, type, ',');
+        getline(inputStream, formula, ',');
+        getline(inputStream, sub1, ',');
+        getline(inputStream, sub2);
+	
+        Substance sub(name, type, formula, sub1, sub2, 0);
+        m_substances[i] = sub;
+        m_myChemist.AddSubstance(sub);
+      }
+
+      /*
+      for (int i = 0; i < 283; i++){
+	cout << (m_myChemist.GetSubstance(i)).m_name << endl;
+	cout << m_substances[i].m_type << endl;
+	cout << m_substances[i].m_formula << endl;
+	cout << m_substances[i].m_substance1 << endl;
+	cout << m_substances[i].m_substance2 << endl;
+	cout << m_substances[i].m_quantity << endl;
+      }
+      */
+      
+      cout << PROJ2_SIZE << " substances loaded" << endl;
+
+      inputStream.close(); //Closes the File
+    }else{
+      cout << "Unable to open file"; //If the input file does not exist, notifies user
+    }
+}
+
+void Lab::StartLab(){
+  
+  //Print out title
+  cout << "\033[;31m";
+  LabTitle();
+  cout << "\033[0m\n";
+
+  //Load all substances to array
+  LoadSubstances();
+
+  //Store name of chemist
+  string name;
+  cout << "What is the name of your Chemist?" << endl;
+  getline(cin,name);
+  m_myChemist.SetName(name);
+
+  //Continually call main menu
+  int choice;
+  do{
+    choice = MainMenu();
+    while ((choice != 1) and (choice != 2) and (choice != 3) and (choice != 4) and (choice != 5)){
+      cout << "Please enter a number from (1-5): ";
+      cin >> choice;
+      
+    }
+    if (choice == 1){
+      DisplaySubstances();
+      
+    }else if (choice == 2){
+      SearchSubstances();
+
+    }else if (choice == 3){
+      CombineSubstances();
+      
+    }else if (choice == 4){
+      CalcScore();
+      
+    }
+  }while (choice != 5 and m_myChemist.GetTotalSubstances() != PROJ2_SIZE);
+
+  //End of game
+  cout << "Thanks for practicing chemistry!" << endl; 
+}
+
+//Display all substances and quantities in Chemist substance array
+void Lab::DisplaySubstances(){
+  cout << "My chemist has " << m_myChemist.GetTotalSubstances() << " different substances in inventory currently" << endl;
+  
+  if (m_myChemist.GetTotalSubstances() != 0){
+    
+    for (int i = 0; i < PROJ2_SIZE; i++){
+      cout << i+1 << ". " << m_myChemist.GetSubstance(i).m_name  << " " << "(" << m_myChemist.GetSubstance(i).m_formula << ")" << " " << m_myChemist.GetSubstance(i).m_quantity << endl;
+    }
+    
+  }else{
+    cout << "You haven't found any substances yet. Try to search for some elements!" << endl;
+  }
+}
+
+// User input menu
+int Lab::MainMenu(){
+  int choice;
+  cout << "What would you like to do?" << endl;
+  cout << "1. Display your Chemist's Substances" << endl;
+  cout << "2. Search for Elements" << endl;
+  cout << "3. Attempt to Merge Substances" << endl;
+  cout << "4. See Score" << endl;
+  cout << "5. Quit" << endl;
+  cin >> choice;
+  return choice;
+}
+
+//Searches for random element
+void Lab::SearchSubstances(){
+  srand(time(NULL));
+  int index = rand() % PROJ2_SIZE;
+  
+  while (m_substances[index].m_type != "element"){
+    index = rand() % PROJ2_SIZE;
+  }
+  m_myChemist.IncrementQuantity(m_substances[index]);
+  cout << m_substances[index].m_name << " Found!" << endl;
+}
+
+//Function to merge two substances
+void Lab::CombineSubstances(){
+  int choice, index;
+  Substance sub1, sub2;
+  string name1, name2;
+  
+  RequestSubstance(choice);
+  sub1 = m_myChemist.GetSubstance(choice-1);
+    
+  RequestSubstance(choice);
+  sub2 = m_myChemist.GetSubstance(choice-1);
+  
+  name1 = sub1.m_name;
+  name2 = sub2.m_name;
+  
+  index = SearchFormulas(name1, name2);
+
+  // Can continue remaining inside SearchFormulas() to cover all repeated pair of substance1 and substance2  
+  if (index == -1){
+    cout << "Nothing happened when you tried to combine " << sub1.m_formula << " and " << sub2.m_formula << endl;
+    
+  }else{
+    if (m_myChemist.CheckQuantity(sub1, sub2)){
+      
+      m_myChemist.DecrementQuantity(sub1);
+      m_myChemist.DecrementQuantity(sub2);
+      
+      m_myChemist.IncrementQuantity(m_myChemist.GetSubstance(index));
+      
+      cout << sub1.m_formula << " combined with " << sub2.m_formula << " to make " << m_myChemist.GetSubstance(index).m_name << "!" << endl;
+      cout << "Your Chemist has built " << m_myChemist.GetSubstance(index).m_name << "." << endl;
+    }else{
+      cout << "You do not have enough " << name1 << " or " << name2 << " to attempt that merge" << endl; 
+    } 
+  }
+}
+
+//Requests index of substances to merge from user
+void Lab::RequestSubstance(int &choice){
+  do{
+    
+    cout << "Which substances would you like to merge?" << endl;
+    cout << "To list known substances enter -1" << endl;
+    cin >> choice;
+    
+    if (choice == -1){
+      for (int i = 0; i < PROJ2_SIZE; i++){
+	if (m_myChemist.CheckSubstance(m_myChemist.GetSubstance(i)) != -1){
+	  cout << i+1 << ". " << m_myChemist.GetSubstance(i).m_name  << " " << "(" << m_myChemist.GetSubstance(i).m_formula << ")" << " " << m_myChemist.GetSubstance(i).m_quantity << endl;
+	}
+      }
+    }else if((choice < 1 or choice >= PROJ2_SIZE)){
+      cout << "Invalid Index!" << endl;
+    }
+     
+  }while(choice < 1 or choice >= PROJ2_SIZE);
+}
+
+//Returns index of matching product after combination
+int Lab::SearchFormulas(string name1, string name2){
+  string formula1, formula2;
+  
+  for (int i = 0; i < PROJ2_SIZE; i++){
+    if (m_myChemist.GetSubstance(i).m_name == name1){
+      formula1 = m_myChemist.GetSubstance(i).m_formula;
+    }
+    if (m_myChemist.GetSubstance(i).m_name == name2){
+      formula2 = m_myChemist.GetSubstance(i).m_formula;
+    }
+  }
+  
+  for (int i = 0; i < PROJ2_SIZE; i++){
+    if (m_myChemist.GetSubstance(i).m_substance1 == formula1){
+      
+      if (m_myChemist.GetSubstance(i).m_substance2 == formula2){
+	return i;
+      }
+    }
+    if (m_myChemist.GetSubstance(i).m_substance2 == formula1){
+      if (m_myChemist.GetSubstance(i).m_substance1 == formula2){
+	return i;
+      }
+    }
+  }
+  return -1;
+}
+
+//Calculates the score of the game
+void Lab::CalcScore(){
+    cout << "\033[1;37m***The Chemist***\033[0m\n";
+    cout << "The Great Chemist " << "\033[1;37m" << m_myChemist.GetName() << "\033[0m" << endl;
+    cout << "There are " << "\033[1;37m" << PROJ2_SIZE << "\033[0m" <<" substances available to find." << endl;
+    cout << "You have found " << "\033[1;37m" << m_myChemist.GetTotalSubstances() << "\033[0m" << " so far." << endl;
+    cout << "This is " << "\033[1;37m" << (float)m_myChemist.GetTotalSubstances() * 100 / PROJ2_SIZE << "%" << "\033[0m" << endl;
+}
