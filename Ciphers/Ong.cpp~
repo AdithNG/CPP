@@ -1,0 +1,78 @@
+#include "Ong.h"
+/**********
+* File: Ong.cpp
+* Intended for Project 4: UMBC Cipher
+**********/
+
+//Default Constructor
+Ong::Ong():Cipher(){}
+
+//Overloaded constructor
+Ong::Ong(string message, bool isEncrypted):Cipher(message, isEncrypted){}
+
+//Destructor
+Ong::~Ong(){}
+
+//Checks if character is vowel (Only letters are consonants)
+bool Ong::IsVowel(char letter){
+  if ((letter >= 'a' and letter <= 'z') || (letter >= 'A' and letter <= 'Z')){
+    
+    if (tolower(letter) == 'a' or tolower(letter) == 'e' or tolower(letter) == 'i' or tolower(letter) == 'o' or tolower(letter) == 'u'){
+      return true;
+    }else{
+      return false;
+    }
+    
+  }
+  return true;
+}
+
+//Encrypts Data
+void Ong::Encrypt(){
+  string message = "";
+  
+  for (unsigned int i = 0; i < GetMessage().size(); i++){
+    
+    if(IsVowel(GetMessage()[i])){
+      message += GetMessage()[i];
+    }else{
+      message = message + GetMessage()[i] + "ong";
+    }
+    if (GetMessage()[i+1] != ' ' and GetMessage()[i] != ' ' and i != GetMessage().size() - 1){
+      message += '-';
+    }
+  }
+  SetMessage(message);
+  ToggleEncrypted();
+}
+
+void Ong::Decrypt(){
+  string message = "";
+
+  for (unsigned int i = 0; i < GetMessage().size(); i++){
+    
+    if (GetMessage()[i] != '-'){
+      
+      if (GetMessage()[i+1] == 'o' and GetMessage()[i+2] == 'n' and GetMessage()[i+3] == 'g'){
+	message += GetMessage()[i];
+	i = i+3;
+	
+      }else if (IsVowel(GetMessage()[i])){
+	message += GetMessage()[i];
+      }
+    }
+  }
+  
+  SetMessage(message);
+  ToggleEncrypted();
+}
+
+string Ong::ToString(){
+  return "(Ong)";
+}
+
+string Ong::FormatOutput(){
+  stringstream ss;
+  ss << "o" << DELIMITER << int(GetIsEncrypted()) << DELIMITER << GetMessage() << DELIMITER << endl;
+  return ss.str();
+}
