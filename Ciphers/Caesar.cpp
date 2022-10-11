@@ -35,7 +35,7 @@ void Caesar::Encrypt(){
       letter += m_shift;
 
       if (letter > 'Z'){
-	letter = (letter % 'Z' - 1) + 'A';
+	letter = (letter % 'Z' - 1) + 'A';//prevent letter bigger than maximum('Z')
       }
     }
     str += letter;
