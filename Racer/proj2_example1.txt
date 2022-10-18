@@ -1,0 +1,313 @@
+*****************************************************************
+U   U   M   M   BBB   CCCC   RRR     AA    CCCC   EEEE   RRR     
+U   U   MM MM   B  B  C      R  R   A  A   C      E      R  R    
+U   U   M M M   BBBB  C      RRR    AAAA   C      EEEE   RRR     
+U   U   M   M   B  B  C      R R    A  A   C      E      R R     
+UUUUU   M   M   BBB   CCCC   R  R   A  A   CCCC   EEEE   R  R    
+*****************************************************************
+What is your racer's name?
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+2
+*****The Mighty Racer JD **********
+Races: 0
+Wins: 0
+Falls: 0
+
+Stats
+Speed: 1
+Agility: 1
+Jump: 1
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a jump obstacle (obstacle 1 of 2)
+Player 1 is on a jump obstacle in (obstacle 1 of 2)
+Player 2 is on a jump obstacle in (obstacle 1 of 2)
+Player 3 is on a jump obstacle in (obstacle 1 of 2)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 fell!
+Player 2 made it through the jump obstacle!
+Player 3 made it through the jump obstacle!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 fell!
+Player 2 made it through the jump obstacle!
+Player 3 fell!
+Player 3 won the race!
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a jump obstacle (obstacle 1 of 3)
+Player 1 is on a jump obstacle in (obstacle 1 of 3)
+Player 2 is on a jump obstacle in (obstacle 1 of 3)
+Player 3 is on a jump obstacle in (obstacle 1 of 3)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 made it through the jump obstacle!
+Player 2 fell!
+Player 3 fell!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 made it through the agility obstacle!
+Player 2 fell!
+Player 3 fell!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You made it through the jump obstacle!
+Player 1 made it through the agility obstacle!
+Player 2 made it through the jump obstacle!
+Player 3 made it through the jump obstacle!
+Player 2 won the race!
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a agility obstacle (obstacle 1 of 2)
+Player 1 is on a agility obstacle in (obstacle 1 of 2)
+Player 2 is on a agility obstacle in (obstacle 1 of 2)
+Player 3 is on a agility obstacle in (obstacle 1 of 2)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You made it through the agility obstacle!
+Player 1 made it through the agility obstacle!
+Player 2 made it through the agility obstacle!
+Player 3 made it through the agility obstacle!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a speed obstacle (obstacle 2 of 2)
+Player 1 is on a speed obstacle in (obstacle 2 of 2)
+Player 2 is on a speed obstacle in (obstacle 2 of 2)
+Player 3 is on a speed obstacle in (obstacle 2 of 2)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 fell!
+Player 2 fell!
+Player 3 fell!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 fell!
+Player 2 made it through the speed obstacle!
+Player 3 fell!
+Player 3 won the race!
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+2
+*****The Mighty Racer JD **********
+Races: 3
+Wins: 0
+Falls: 6
+
+Stats
+Speed: 1
+Agility: 1
+Jump: 1
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a speed obstacle (obstacle 1 of 1)
+Player 1 is on a speed obstacle in (obstacle 1 of 1)
+Player 2 is on a speed obstacle in (obstacle 1 of 1)
+Player 3 is on a speed obstacle in (obstacle 1 of 1)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 fell!
+Player 2 fell!
+Player 3 fell!
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You fell!
+Player 1 made it through the speed obstacle!
+Player 2 made it through the speed obstacle!
+Player 3 fell!
+Player 2 won the race!
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a jump obstacle (obstacle 1 of 1)
+Player 1 is on a jump obstacle in (obstacle 1 of 1)
+Player 2 is on a jump obstacle in (obstacle 1 of 1)
+Player 3 is on a jump obstacle in (obstacle 1 of 1)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You made it through the jump obstacle!
+Player 1 made it through the jump obstacle!
+Player 2 made it through the jump obstacle!
+Player 3 made it through the jump obstacle!
+You won the race!
+Which stat would you like to increase?
+1. Speed
+2. Agility
+3. Jump
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+1
+How long would you like the race?
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are on a agility obstacle (obstacle 1 of 1)
+Player 1 is on a agility obstacle in (obstacle 1 of 1)
+Player 2 is on a agility obstacle in (obstacle 1 of 1)
+Player 3 is on a agility obstacle in (obstacle 1 of 1)
+What would you like to do?
+1. Get Race Status
+2. Try to Sprint (Speed)
+3. Try to Dodge (Agility)
+4. Try to Jump (Jump)
+You are trying to progress the race!
+You made it through the agility obstacle!
+Player 1 made it through the agility obstacle!
+Player 2 made it through the agility obstacle!
+Player 3 made it through the agility obstacle!
+You won the race!
+Which stat would you like to increase?
+1. Speed
+2. Agility
+3. Jump
+Which stat would you like to increase?
+1. Speed
+2. Agility
+3. Jump
+Which stat would you like to increase?
+1. Speed
+2. Agility
+3. Jump
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+2
+*****The Mighty Racer JD **********
+Races: 6
+Wins: 2
+Falls: 8
+
+Stats
+Speed: 1
+Agility: 3
+Jump: 1
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+What would you like to do?
+1. Start New Race
+2. View Racer History
+3. Quit
+3
+Thanks for playing UMBC Race!
