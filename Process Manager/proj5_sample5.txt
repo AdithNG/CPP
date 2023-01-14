@@ -1,0 +1,192 @@
+//This test run is just ./proj5 proj5_data2.txt with 6 threads (Some of the threads complete the same code)
+
+Welcome to UMBC Processor!
+Added a thread
+Added a thread
+Added a thread
+Added a thread
+Added a thread
+Added a thread
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 1
+Process ZZ 52 -1 35694
+Process L 12 52 49547
+Process K 11 12 6591
+Process J 10 11 94822
+Process I 9 10 33853
+Process H 8 9 74541
+Process G 7 8 99809
+Process F 6 7 58117
+Process E 5 6 57276
+Process A 1 5 99474
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 2
+Process ZZ 52 -1 35694
+Process L 12 52 49547
+Process K 11 12 6591
+Process J 10 11 94822
+Process W 23 10 48541
+Process V 22 23 86430
+Process U 21 22 84116
+Process T 20 21 95329
+Process S 19 20 6303
+Process R 18 19 19629
+Process Q 17 18 75230
+Process P 16 17 89261
+Process O 15 16 32045
+Process N 14 15 60568
+Process B 2 14 79591
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 3
+Process ZZ 52 -1 35694
+Process L 12 52 49547
+Process K 11 12 6591
+Process J 10 11 94822
+Process W 23 10 48541
+Process V 22 23 86430
+Process U 21 22 84116
+Process T 20 21 95329
+Process S 19 20 6303
+Process R 18 19 19629
+Process Q 17 18 75230
+Process P 16 17 89261
+Process O 15 16 32045
+Process N 14 15 60568
+Process B 2 14 79591
+Process XX 50 2 49227
+Process WW 49 50 78871
+Process VV 48 49 47713
+Process UU 47 48 85498
+Process TT 46 47 48309
+Process SS 45 46 84979
+Process RR 44 45 21509
+Process QQ 43 44 70048
+Process PP 42 43 54886
+Process OO 41 42 5593
+Process NN 40 41 47025
+Process MM 39 40 1879
+Process LL 38 39 56279
+Process KK 37 38 96216
+Process JJ 36 37 60824
+Process II 35 36 87199
+Process HH 34 35 69946
+Process GG 33 34 54916
+Process FF 32 33 58624
+Process EE 31 32 95966
+Process DD 30 31 95492
+Process CC 29 30 69561
+Process BB 28 29 89426
+Process AA 27 28 41797
+Process Z 26 27 28011
+Process Y 25 26 6287
+Process X 24 25 20143
+Process C 3 24 8035
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 4
+Process ZZ 52 -1 35694
+Process YY 51 52 8680
+Process D 4 51 60046
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 5
+Process ZZ 52 -1 35694
+Process L 12 52 49547
+Process K 11 12 6591
+Process J 10 11 94822
+Process I 9 10 33853
+Process H 8 9 74541
+Process G 7 8 99809
+Process F 6 7 58117
+Process E 5 6 57276
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (10 processes)
+2. Thread 2 (15 processes)
+3. Thread 3 (43 processes)
+4. Thread 4 (3 processes)
+5. Thread 5 (9 processes)
+6. Thread 6 (8 processes)
+Thread 6
+Process ZZ 52 -1 35694
+Process L 12 52 49547
+Process K 11 12 6591
+Process J 10 11 94822
+Process I 9 10 33853
+Process H 8 9 74541
+Process G 7 8 99809
+Process F 6 7 58117
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+2
+Thread 1 took 609724 milliseconds to complete
+Thread 2 took 863697 milliseconds to complete
+Thread 3 took 2397956 milliseconds to complete
+Thread 4 took 104420 milliseconds to complete
+Thread 5 took 510250 milliseconds to complete
+Thread 6 took 452974 milliseconds to complete
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+3
+Thank you trying UMBC Processor!

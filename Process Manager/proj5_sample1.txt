@@ -1,0 +1,301 @@
+//This test run is just ./proj5 proj5_data1.txt with 4 threads
+
+Welcome to UMBC Processor!
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit
+0
+Please enter a valid option.
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit
+4
+Please enter a valid option.
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (52 processes)
+2. Thread 2 (51 processes)
+3. Thread 3 (50 processes)
+4. Thread 4 (49 processes)
+1
+Thread 1
+Process ZZ 52 -1 72157
+Process YY 51 52 97217
+Process XX 50 51 88378
+Process WW 49 50 72397
+Process VV 48 49 19866
+Process UU 47 48 2649
+Process TT 46 47 40768
+Process SS 45 46 70612
+Process RR 44 45 81331
+Process QQ 43 44 76631
+Process PP 42 43 68272
+Process OO 41 42 43277
+Process NN 40 41 56822
+Process MM 39 40 7325
+Process LL 38 39 41607
+Process KK 37 38 36736
+Process JJ 36 37 23571
+Process II 35 36 81223
+Process HH 34 35 48441
+Process GG 33 34 79374
+Process FF 32 33 17896
+Process EE 31 32 94947
+Process DD 30 31 10117
+Process CC 29 30 34309
+Process BB 28 29 69288
+Process AA 27 28 5774
+Process Z 26 27 16441
+Process Y 25 26 53895
+Process X 24 25 80932
+Process W 23 24 63557
+Process V 22 23 40695
+Process U 21 22 59112
+Process T 20 21 99152
+Process S 19 20 64655
+Process R 18 19 50088
+Process Q 17 18 56148
+Process P 16 17 510
+Process O 15 16 80196
+Process N 14 15 98487
+Process M 13 14 27012
+Process L 12 13 6677
+Process K 11 12 48245
+Process J 10 11 20412
+Process I 9 10 44846
+Process H 8 9 55490
+Process G 7 8 5600
+Process F 6 7 67142
+Process E 5 6 18116
+Process D 4 5 674
+Process C 3 4 19803
+Process B 2 3 45550
+Process A 1 2 82696
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (52 processes)
+2. Thread 2 (51 processes)
+3. Thread 3 (50 processes)
+4. Thread 4 (49 processes)
+2
+Thread 2
+Process ZZ 52 -1 72157
+Process YY 51 52 97217
+Process XX 50 51 88378
+Process WW 49 50 72397
+Process VV 48 49 19866
+Process UU 47 48 2649
+Process TT 46 47 40768
+Process SS 45 46 70612
+Process RR 44 45 81331
+Process QQ 43 44 76631
+Process PP 42 43 68272
+Process OO 41 42 43277
+Process NN 40 41 56822
+Process MM 39 40 7325
+Process LL 38 39 41607
+Process KK 37 38 36736
+Process JJ 36 37 23571
+Process II 35 36 81223
+Process HH 34 35 48441
+Process GG 33 34 79374
+Process FF 32 33 17896
+Process EE 31 32 94947
+Process DD 30 31 10117
+Process CC 29 30 34309
+Process BB 28 29 69288
+Process AA 27 28 5774
+Process Z 26 27 16441
+Process Y 25 26 53895
+Process X 24 25 80932
+Process W 23 24 63557
+Process V 22 23 40695
+Process U 21 22 59112
+Process T 20 21 99152
+Process S 19 20 64655
+Process R 18 19 50088
+Process Q 17 18 56148
+Process P 16 17 510
+Process O 15 16 80196
+Process N 14 15 98487
+Process M 13 14 27012
+Process L 12 13 6677
+Process K 11 12 48245
+Process J 10 11 20412
+Process I 9 10 44846
+Process H 8 9 55490
+Process G 7 8 5600
+Process F 6 7 67142
+Process E 5 6 18116
+Process D 4 5 674
+Process C 3 4 19803
+Process B 2 3 45550
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (52 processes)
+2. Thread 2 (51 processes)
+3. Thread 3 (50 processes)
+4. Thread 4 (49 processes)
+3
+Thread 3
+Process ZZ 52 -1 72157
+Process YY 51 52 97217
+Process XX 50 51 88378
+Process WW 49 50 72397
+Process VV 48 49 19866
+Process UU 47 48 2649
+Process TT 46 47 40768
+Process SS 45 46 70612
+Process RR 44 45 81331
+Process QQ 43 44 76631
+Process PP 42 43 68272
+Process OO 41 42 43277
+Process NN 40 41 56822
+Process MM 39 40 7325
+Process LL 38 39 41607
+Process KK 37 38 36736
+Process JJ 36 37 23571
+Process II 35 36 81223
+Process HH 34 35 48441
+Process GG 33 34 79374
+Process FF 32 33 17896
+Process EE 31 32 94947
+Process DD 30 31 10117
+Process CC 29 30 34309
+Process BB 28 29 69288
+Process AA 27 28 5774
+Process Z 26 27 16441
+Process Y 25 26 53895
+Process X 24 25 80932
+Process W 23 24 63557
+Process V 22 23 40695
+Process U 21 22 59112
+Process T 20 21 99152
+Process S 19 20 64655
+Process R 18 19 50088
+Process Q 17 18 56148
+Process P 16 17 510
+Process O 15 16 80196
+Process N 14 15 98487
+Process M 13 14 27012
+Process L 12 13 6677
+Process K 11 12 48245
+Process J 10 11 20412
+Process I 9 10 44846
+Process H 8 9 55490
+Process G 7 8 5600
+Process F 6 7 67142
+Process E 5 6 18116
+Process D 4 5 674
+Process C 3 4 19803
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (52 processes)
+2. Thread 2 (51 processes)
+3. Thread 3 (50 processes)
+4. Thread 4 (49 processes)
+4
+Thread 4
+Process ZZ 52 -1 72157
+Process YY 51 52 97217
+Process XX 50 51 88378
+Process WW 49 50 72397
+Process VV 48 49 19866
+Process UU 47 48 2649
+Process TT 46 47 40768
+Process SS 45 46 70612
+Process RR 44 45 81331
+Process QQ 43 44 76631
+Process PP 42 43 68272
+Process OO 41 42 43277
+Process NN 40 41 56822
+Process MM 39 40 7325
+Process LL 38 39 41607
+Process KK 37 38 36736
+Process JJ 36 37 23571
+Process II 35 36 81223
+Process HH 34 35 48441
+Process GG 33 34 79374
+Process FF 32 33 17896
+Process EE 31 32 94947
+Process DD 30 31 10117
+Process CC 29 30 34309
+Process BB 28 29 69288
+Process AA 27 28 5774
+Process Z 26 27 16441
+Process Y 25 26 53895
+Process X 24 25 80932
+Process W 23 24 63557
+Process V 22 23 40695
+Process U 21 22 59112
+Process T 20 21 99152
+Process S 19 20 64655
+Process R 18 19 50088
+Process Q 17 18 56148
+Process P 16 17 510
+Process O 15 16 80196
+Process N 14 15 98487
+Process M 13 14 27012
+Process L 12 13 6677
+Process K 11 12 48245
+Process J 10 11 20412
+Process I 9 10 44846
+Process H 8 9 55490
+Process G 7 8 5600
+Process F 6 7 67142
+Process E 5 6 18116
+Process D 4 5 674
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+2
+Thread 1 took 2547116 milliseconds to complete
+Thread 2 took 2464420 milliseconds to complete
+Thread 3 took 2418870 milliseconds to complete
+Thread 4 took 2399067 milliseconds to complete
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (0 processes)
+2. Thread 2 (0 processes)
+3. Thread 3 (0 processes)
+4. Thread 4 (0 processes)
+4
+Thread 4
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+2
+Thread 1 took 0 milliseconds to complete
+Thread 2 took 0 milliseconds to complete
+Thread 3 took 0 milliseconds to complete
+Thread 4 took 0 milliseconds to complete
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+3
+Thank you trying UMBC Processor!

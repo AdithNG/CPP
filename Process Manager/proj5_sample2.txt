@@ -1,0 +1,118 @@
+//This test run is just ./proj5 proj5_data2.txt with 4 threads
+
+Welcome to UMBC Processor!
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (13 processes)
+2. Thread 2 (13 processes)
+3. Thread 3 (13 processes)
+4. Thread 4 (13 processes)
+1
+Thread 1
+Process WW 49 -1 578
+Process SS 45 49 8070
+Process OO 41 45 1055
+Process KK 37 41 6359
+Process GG 33 37 3644
+Process CC 29 33 6273
+Process Y 25 29 3645
+Process U 21 25 8803
+Process Q 17 21 3435
+Process M 13 17 5579
+Process I 9 13 6598
+Process E 5 9 9235
+Process A 1 5 1186
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (13 processes)
+2. Thread 2 (13 processes)
+3. Thread 3 (13 processes)
+4. Thread 4 (13 processes)
+2
+Thread 2
+Process XX 50 -1 6546
+Process TT 46 50 8598
+Process PP 42 46 308
+Process LL 38 42 5038
+Process HH 34 38 5305
+Process DD 30 34 2891
+Process Z 26 30 3433
+Process V 22 26 6520
+Process R 18 22 7466
+Process N 14 18 845
+Process J 10 14 3354
+Process F 6 10 4411
+Process B 2 6 2349
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (13 processes)
+2. Thread 2 (13 processes)
+3. Thread 3 (13 processes)
+4. Thread 4 (13 processes)
+Thread 3
+3
+Process YY 51 -1 5061
+Process UU 47 51 7235
+Process QQ 43 47 4239
+Process MM 39 43 6926
+Process II 35 39 6650
+Process EE 31 35 2088
+Process AA 27 31 5457
+Process W 23 27 9509
+Process S 19 23 2207
+Process O 15 19 1193
+Process K 11 15 7350
+Process G 7 11 1371
+Process C 3 7 276
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (13 processes)
+2. Thread 2 (13 processes)
+3. Thread 3 (13 processes)
+4. Thread 4 (13 processes)
+Thread 4
+4
+Process ZZ 52 -1 911
+Process VV 48 52 2031
+Process RR 44 48 1008
+Process NN 40 44 3624
+Process JJ 36 40 4665
+Process FF 32 36 3862
+Process BB 28 32 1804
+Process X 24 28 6132
+Process T 20 24 6039
+Process P 16 20 3605
+Process L 12 16 9128
+Process H 8 12 2621
+Process D 4 8 6733
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+2
+Thread 1 took 64460 milliseconds to complete
+Thread 2 took 57064 milliseconds to complete
+Thread 3 took 59562 milliseconds to complete
+Thread 4 took 52163 milliseconds to complete
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+3
+Thank you trying UMBC Processor!

@@ -1,0 +1,37 @@
+//This test run is just ./proj5 proj5_data2.txt with 1 thread (It does not process threads 2, 3, or 4)
+
+Welcome to UMBC Processor!
+Added a thread
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+1
+What thread would you like to view?
+1. Thread 1 (13 processes)
+Thread 1
+Process WW 49 -1 578
+Process SS 45 49 8070
+Process OO 41 45 1055
+Process KK 37 41 6359
+Process GG 33 37 3644
+Process CC 29 33 6273
+Process Y 25 29 3645
+Process U 21 25 8803
+Process Q 17 21 3435
+Process M 13 17 5579
+Process I 9 13 6598
+Process E 5 9 9235
+Process A 1 5 1186
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+2
+Thread 1 took 64460 milliseconds to complete
+Choose an option.
+1. Display Threads 
+2. Start Thread 
+3. Quit 
+3
+Thank you trying UMBC Processor!
